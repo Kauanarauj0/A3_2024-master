@@ -1,0 +1,183 @@
+JFDML JFormDesigner: "8.2.3.0.386" Java: "17.0.10" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"defaultCloseOperation": 3
+			"$locationPolicy": 1
+			"resizable": false
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnCancelar"
+				"font": new java.awt.Font( "Berlin Sans FB Demi", 0, 36 )
+				"foreground": new java.awt.Color( 121, 94, 94, 255 )
+				"text": "Cancelar"
+				"border": new javax.swing.border.SoftBevelBorder( 0, null, null, null, null )
+				"cursor": &Cursor0 new java.awt.Cursor( 12 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnCancelarActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 570
+				"y": 650
+				"width": 150
+				"height": 60
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblSenhaCadastro"
+				"background": new java.awt.Color( 0, 102, 0, 255 )
+				"font": new java.awt.Font( "Berlin Sans FB Demi", 0, 36 )
+				"foreground": new java.awt.Color( 110, 86, 86, 255 )
+				"text": "Senha:"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 360
+				"y": 420
+				"width": 120
+				"height": 60
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblConfirmeCadastro"
+				"background": new java.awt.Color( 0, 102, 0, 255 )
+				"font": new java.awt.Font( "Berlin Sans FB Demi", 0, 36 )
+				"foreground": new java.awt.Color( 110, 86, 86, 255 )
+				"text": "Confirme:"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 310
+				"y": 500
+				"width": 160
+				"height": 40
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblEmailCadastro"
+				"background": new java.awt.Color( 0, 102, 0, 255 )
+				"font": new java.awt.Font( "Berlin Sans FB Demi", 0, 36 )
+				"foreground": new java.awt.Color( 110, 86, 86, 255 )
+				"text": "Email:"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 360
+				"y": 350
+				"width": 120
+				"height": 60
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblCelularCadastro"
+				"background": new java.awt.Color( 0, 102, 0, 255 )
+				"font": new java.awt.Font( "Berlin Sans FB Demi", 0, 36 )
+				"foreground": new java.awt.Color( 110, 86, 86, 255 )
+				"text": "Celular:"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 340
+				"y": 280
+				"width": 140
+				"height": 50
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lblNomeCadastro"
+				"background": new java.awt.Color( 0, 102, 0, 255 )
+				"font": new java.awt.Font( "Berlin Sans FB Demi", 0, 36 )
+				"foreground": new java.awt.Color( 110, 86, 86, 255 )
+				"text": "Nome:"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 360
+				"y": 200
+				"width": 120
+				"height": 60
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnLimpar"
+				"font": new java.awt.Font( "Berlin Sans FB Demi", 0, 36 )
+				"foreground": new java.awt.Color( 105, 83, 83, 255 )
+				"text": "Limpar"
+				"border": new javax.swing.border.SoftBevelBorder( 0, null, null, null, null )
+				"cursor": #Cursor0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnLimparActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 490
+				"y": 580
+				"width": 140
+				"height": 60
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnCadastrar"
+				"font": new java.awt.Font( "Berlin Sans FB Demi", 0, 36 )
+				"foreground": new java.awt.Color( 121, 94, 94, 255 )
+				"text": "Cadastrar"
+				"border": new javax.swing.border.SoftBevelBorder( 0, null, null, null, null )
+				"cursor": #Cursor0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnCadastrarActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 640
+				"y": 580
+				"width": 170
+				"height": 60
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtEmail"
+				"font": new java.awt.Font( "Berlin Sans FB", 0, 18 )
+				"text": "Digite seu e-mail"
+				"foreground": new java.awt.Color( 204, 204, 204, 255 )
+				addEvent( new FormEvent( "java.awt.event.FocusListener", "focusGained", "txtEmailFocusGained", true ) )
+				addEvent( new FormEvent( "java.awt.event.FocusListener", "focusLost", "txtEmailFocusLost", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 490
+				"y": 360
+				"width": 320
+				"height": 40
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtCelular"
+				"font": new java.awt.Font( "Berlin Sans FB", 0, 18 )
+				"foreground": new java.awt.Color( 204, 204, 204, 255 )
+				"text": "Digite seu celular"
+				addEvent( new FormEvent( "java.awt.event.FocusListener", "focusGained", "txtCelularFocusGained", true ) )
+				addEvent( new FormEvent( "java.awt.event.FocusListener", "focusLost", "txtCelularFocusLost", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 490
+				"y": 280
+				"width": 320
+				"height": 40
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "txtConfirme"
+				"font": new java.awt.Font( "Gill Sans MT Condensed", 0, 36 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 490
+				"y": 500
+				"width": 320
+				"height": 40
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "txtSenha"
+				"font": new java.awt.Font( "Gill Sans MT Condensed", 0, 36 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "txtSenhaActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 490
+				"y": 430
+				"width": 320
+				"height": 40
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtNome"
+				"font": new java.awt.Font( "Berlin Sans FB", 0, 18 )
+				"text": "Digite seu nome"
+				"foreground": new java.awt.Color( 204, 204, 204, 255 )
+				addEvent( new FormEvent( "java.awt.event.FocusListener", "focusGained", "txtNomeFocusGained", true ) )
+				addEvent( new FormEvent( "java.awt.event.FocusListener", "focusLost", "txtNomeFocusLost", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 490
+				"y": 210
+				"width": 320
+				"height": 40
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "jLabel1"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/interfaces/FotoCadastro.png" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 1280
+				"height": 720
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"size": new java.awt.Dimension( 1280, 720 )
+			"location": new java.awt.Point( 0, 0 )
+		} )
+	}
+}
